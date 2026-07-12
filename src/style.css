@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#eef2f3,#d9e4f5);
+}
+
+/* Navbar */
+
+.navbar{
+    background:#0d47a1;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+.left{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:15px;
+    border:3px solid white;
+}
+
+.left h2{
+    font-size:28px;
+}
+
+.right{
+    text-align:right;
+    font-size:16px;
+}
+
+/* Sidebar */
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:90px;
+    width:220px;
+    height:100%;
+    background:#1e293b;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:18px;
+    color:white;
+    font-size:18px;
+    border-bottom:1px solid #374151;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover{
+    background:#2563eb;
+    padding-left:30px;
+}
+
+/* Content */
+
+.content{
+    margin-left:240px;
+    padding:40px;
+}
+
+.title{
+    color:#0d47a1;
+    margin-bottom:30px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.25);
+}
+
+.card h2{
+    color:#0d47a1;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+    font-size:18px;
+}
+
+/* Button */
+
+button{
+    margin-top:35px;
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1565c0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+        top:0;
+    }
+
+    .content{
+        margin-left:0;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}

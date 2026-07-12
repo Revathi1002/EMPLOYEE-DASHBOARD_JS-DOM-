@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="left">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="logo" alt="Logo">
+        <h2>Employee Dashboard</h2>
+    </div>
+
+    <div class="right">
+        <h3>Company Name: <i id="company">ABC Technologies</i></h3>
+        <h3>Location: <i>Bengaluru</i></h3>
+    </div>
+</header>
+
+<!-- Sidebar -->
+<nav class="sidebar">
+    <ul>
+        <li>Dashboard</li>
+        <li>Employees</li>
+        <li id="emp">Employee Details</li>
+        <li>Attendance</li>
+        <li>Reports</li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+    <h1 class="title">Employee Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="total">100</h2>
+            <p>Total Employees</p>
+        </div>
+
+        <div class="card">
+            <h2>95</h2>
+            <p>Present Today</p>
+        </div>
+
+        <div class="card">
+            <h2>5</h2>
+            <p>Absent</p>
+        </div>
+
+    </div>
+
+
+    <button onclick="changeData()">Update Dashboard</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
